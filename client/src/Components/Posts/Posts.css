@@ -1,0 +1,26 @@
+.customStyle {
+    width: 45%;
+    height: 470px;
+    transition: 0.4s;
+
+}
+.customStyle:hover{
+    transform: translateY(-4px);
+    transition: 1s;
+    /* cursor: pointer; */
+}
+
+.custom_imgStyle {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.fa-trash, .fa-pen-to-square {
+    font-size: 17px;
+}
+
+.fa-ellipsis-vertical{
+    font-size: 22px;
+}
+/* .fa-trash:hover{
+    color: red;
+} */
