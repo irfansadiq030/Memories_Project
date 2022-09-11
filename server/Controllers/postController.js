@@ -8,7 +8,7 @@ exports.getPosts = async (req, resp, next) => {
         if (posts) {
 
             return resp.status(200).json({
-                message: success,
+                message: 'success',
                 posts
             })
         }
@@ -26,12 +26,12 @@ exports.getPosts = async (req, resp, next) => {
 // Creating Function to create Post
 
 exports.createPost = async (req, resp, next) => {
-    const { title, message, creator, tags } = req.body;
+    const { title, message, creator, tags, selectedFile } = req.body;
     // console.log(req.body);
     try {
         
         const post = await Post.create({
-            title, message, creator, tags
+            title, message, creator, tags, selectedFile
         });
 
         return resp.status(201).json({
