@@ -11,7 +11,6 @@ const Posts = () => {
   useEffect(() => {
 
     fetchPosts();
-
   }, []);
 
   // calling API to fetch POSTS from DB
